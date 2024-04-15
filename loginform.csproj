@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5A02FDB-05DB-4418-BCD0-47F01122C2BC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>loginform</RootNamespace>
+    <AssemblyName>loginform</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F05D4825D2149834A34450606292F98779A17374</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>loginform_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Album_Delete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Album_Delete.Designer.cs">
+      <DependentUpon>Album_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Album_Display.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Album_Display.Designer.cs">
+      <DependentUpon>Album_Display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Album_Search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Album_Search.Designer.cs">
+      <DependentUpon>Album_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ALBUM_Update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ALBUM_Update.Designer.cs">
+      <DependentUpon>ALBUM_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audio_Delete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Audio_Delete.Designer.cs">
+      <DependentUpon>Audio_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audio_Display.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Audio_Display.Designer.cs">
+      <DependentUpon>Audio_Display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audio_Search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Audio_Search.Designer.cs">
+      <DependentUpon>Audio_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audio_Update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Audio_Update.Designer.cs">
+      <DependentUpon>Audio_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Channel_Delete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Channel_Delete.Designer.cs">
+      <DependentUpon>Channel_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Channel_Display.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Channel_Display.Designer.cs">
+      <DependentUpon>Channel_Display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Channel_Search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Channel_Search.Designer.cs">
+      <DependentUpon>Channel_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Channel_Update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Channel_Update.Designer.cs">
+      <DependentUpon>Channel_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Table.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Delete_Table.Designer.cs">
+      <DependentUpon>Delete_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display_Table.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display_Table.Designer.cs">
+      <DependentUpon>Display_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features_Delete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Features_Delete.Designer.cs">
+      <DependentUpon>Features_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features_Display.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Features_Display.Designer.cs">
+      <DependentUpon>Features_Display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features_Search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Features_Search.Designer.cs">
+      <DependentUpon>Features_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features_Update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Features_Update.Designer.cs">
+      <DependentUpon>Features_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Insert.Designer.cs">
+      <DependentUpon>Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainControlClass.cs" />
+    <Compile Include="Music_World.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Music_World.Designer.cs">
+      <DependentUpon>Music_World.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search_Table.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search_Table.Designer.cs">
+      <DependentUpon>Search_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Track_Display.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Track_Display.Designer.cs">
+      <DependentUpon>Track_Display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Track_Search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Track_Search.Designer.cs">
+      <DependentUpon>Track_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Track_Update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Track_Update.Designer.cs">
+      <DependentUpon>Track_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Table.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Update_Table.Designer.cs">
+      <DependentUpon>Update_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Video_Delete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Video_Delete.Designer.cs">
+      <DependentUpon>Video_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Video_Display.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Video_Display.Designer.cs">
+      <DependentUpon>Video_Display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Video_Search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Video_Search.Designer.cs">
+      <DependentUpon>Video_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Video_Update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Video_Update.Designer.cs">
+      <DependentUpon>Video_Update.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Album_Delete.resx">
+      <DependentUpon>Album_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Album_Display.resx">
+      <DependentUpon>Album_Display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Album_Search.resx">
+      <DependentUpon>Album_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ALBUM_Update.resx">
+      <DependentUpon>ALBUM_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audio_Delete.resx">
+      <DependentUpon>Audio_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audio_Display.resx">
+      <DependentUpon>Audio_Display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audio_Search.resx">
+      <DependentUpon>Audio_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audio_Update.resx">
+      <DependentUpon>Audio_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Channel_Delete.resx">
+      <DependentUpon>Channel_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Channel_Display.resx">
+      <DependentUpon>Channel_Display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Channel_Search.resx">
+      <DependentUpon>Channel_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Channel_Update.resx">
+      <DependentUpon>Channel_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Table.resx">
+      <DependentUpon>Delete_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display_Table.resx">
+      <DependentUpon>Display_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features_Delete.resx">
+      <DependentUpon>Features_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features_Display.resx">
+      <DependentUpon>Features_Display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features_Search.resx">
+      <DependentUpon>Features_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features_Update.resx">
+      <DependentUpon>Features_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insert.resx">
+      <DependentUpon>Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Music_World.resx">
+      <DependentUpon>Music_World.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Search_Table.resx">
+      <DependentUpon>Search_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Track_Display.resx">
+      <DependentUpon>Track_Display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Track_Search.resx">
+      <DependentUpon>Track_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Track_Update.resx">
+      <DependentUpon>Track_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Table.resx">
+      <DependentUpon>Update_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video_Delete.resx">
+      <DependentUpon>Video_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video_Display.resx">
+      <DependentUpon>Video_Display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video_Search.resx">
+      <DependentUpon>Video_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video_Update.resx">
+      <DependentUpon>Video_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="loginform_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
